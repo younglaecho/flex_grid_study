@@ -6,8 +6,29 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>CSS Flex</title>
 	<link rel="stylesheet" href="default.css">
+	<style>
+		.flex-container{
+			display: flex;
+			flex-wrap: wrap;
+			align-content: stretch;
+			height: 300px
+		}
+		@media (min-width: 600px) {
+			.flex-container {
+				flex-direction: row;
+			}
+			.flex-item{
+				flex: 1;
+			};
+		}
+	</style>
 </head>
 <body>
-	
+	<div class="flex-container">
+		<div class="flex-item">AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</div>
+		<div class="flex-item">BBB</div>
+		<div class="flex-item">CCCCCCCC</div>
+	</div>	
+	Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, atque doloremque. Atque incidunt ipsa laborum dolorem eum dolorum ea voluptates ipsam. Modi quam similique in corrupti tempora sunt sit qui!
 </body>
 </html>

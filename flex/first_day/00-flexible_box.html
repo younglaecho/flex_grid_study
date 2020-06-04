@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>CSS Flex</title>
+	<link rel="stylesheet" href="default.css">
+	<style>
+		.flex-container{
+			display: flex;
+			flex-wrap:wrap;
+		}
+		.flex-item {
+			flex:1 1 auto;
+		}
+		.flex-item:nth-child(1) {
+			/* flex: 1 1 0; */
+			/* overflow:hidden; */
+			width:20%;
+			/* flex: 0 1 20%; */
+		}
+		.flex-item:nth-child(2) {
+			/* flex: 3 1 0; */
+			width:60%;
+			/* flex: 0 1 60%; */
+		}
+		.flex-item:nth-child(3) {
+			/* flex: 1 1 0; */
+			width:20%;
+			/* flex: 0 1 20%; */
+		}
+
+
+	</style>
+</head>
+<body>
+	<div class="flex-container">
+		<div class="flex-item">
+			<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores perspiciatis accusantium blanditiis aliquam error architecto neque iure officia, dolore laborum, explicabo exercitationem molestias quas velit ut fugit aspernatur quam illo.</p>
+		</div>
+		<div class="flex-item">BBB</div>
+		<div class="flex-item">CCCCCCCC</div>
+		<div class="flex-item">DDDDDDDD</div>
+
+	</div>	
+	Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, atque doloremque. Atque incidunt ipsa laborum dolorem eum dolorum ea voluptates ipsam. Modi quam similique in corrupti tempora sunt sit qui!
+</body>
+</html>
