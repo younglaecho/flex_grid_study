@@ -74,3 +74,33 @@
     background-position: center;
     background-size: cover;
 }
+
+/* friend-list */
+.friend-item {
+    align-items: center;
+}
+.user-name {
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+}
+
+/* modal */
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    background: rgba(0,0,0,0.3);
+}
+.dialog {
+    width: 50vh;
+    padding: 1em;
+    border-radius: 1em;
+    background: white;
+
+}
