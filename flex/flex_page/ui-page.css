@@ -1,0 +1,107 @@
+.header {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    height: 80px;
+    padding: 0 1rem;
+}
+/* .header에 justify-content: space-between; 대신에 사용 가능 */
+.search-form {
+    margin-left: auto;
+    margin-right: 3rem;
+    width: 240px;
+    max-width: 60%;
+}
+.primary {
+    padding: 1rem;
+}
+.secondary {
+    padding : 1rem;
+}
+.info-list {
+    margin-bottom: 2rem;
+}
+.secondary-a {
+    background-color: white;
+}
+.secondary-b {
+    color: white;
+    background-color: #666;
+}
+.footer {
+    padding: 1rem;
+    text-align:center;
+}
+.modal {
+    top: 80px;
+    display:none;
+}
+#modal-switch:checked ~ .modal {
+    display : flex;
+}
+#modal-switch:checked ~ label[for="modal-switch"] {
+    color:dodgerblue;
+}
+label[for="modal-switch"] {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 1.3rem;
+    right: 1rem;
+    width: 40px;
+    height: 40px;
+    /* background: red; */
+}
+label[for="modal-switch"]:before {
+    content: "➥";
+}
+#modal-switch,
+label[for="modal-switch"] span {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 1px;
+    height: 1px;
+    opacity:0;
+}
+
+@media (min-width: 1024px) {
+    .page {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .header {
+        width: 100%;
+    }
+    .menu {
+        width: 100%;
+    }
+    .secondary {
+        width: 20%;
+    }
+    .secondary-a {
+        order: 1;
+    }
+    .secondary-b {
+        order: 3;
+    }
+    .primary {
+        width: 60%;
+        order: 2;
+    }
+    .footer {
+        border-top: 1px solid lightgray;
+        width: 100%;
+        order: 4;
+    }
+}
+@media (min-width: 1400px) {
+    .primary {
+        width: calc(100% - 600px);
+        flex: 1 1 auto;
+    }
+    .secondary {
+        width: 300px;
+    }
+}
